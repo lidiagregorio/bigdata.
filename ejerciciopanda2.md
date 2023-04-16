@@ -3,14 +3,14 @@ En este análisis, examinaremos algunos de los principales indicadores de rendim
 
 Esto nos permitirá comprender mejor el panorama de Twitch en España durante ese mes y analizar las tendencias y patrones observados en la plataforma de transmisión en vivo líder en el país.
 
-#### ¿CUÁL HA SIDO LA EVOLUCIÓN DE ESPECTADORES (CAPTURA A CAPTURA) DURANTE EL PERIODO?
+#### 1 ¿CUÁL HA SIDO LA EVOLUCIÓN DE ESPECTADORES (CAPTURA A CAPTURA) DURANTE EL PERIODO?
 
 Durante febrero se pueden identificar comportamientos específicos en la audiencia de Twitch, ya que ha experimentado un aumento general durante el mes, con cinco picos destacados. Los picos más notables ocurrieron a finales de mes, el 26 de febrero con 39,082,398 y el 28 de febrero con 46,056,029 espectadores, debido al regreso a la plataforma del streamer Auronplay, y a la celebración de eventos como la Kings League durante el día 26, la Velada de Ibai el 27 de febrero, y los Squid Games 2 con Auronplay el 28 de febrero.
 
 Además, se puede observar que la audiencia de Twitch muestra un patrón cíclico con puntos bajos en las mañanas y los puntos altos en las tardes y noches. Alrededor de las 8 a.m. hasta las 3 p.m., el volumen de espectadores disminuye hasta alcanzar los 60,000 espectadores. A partir de las 3 p.m., se observa una tendencia al alza, a partir de las 9 p.m. Por lo cual, seguramente esté relacionado con los hábitos de consumo de la plataforma en la región de habla hispana, con la coincidencia de horarios de España y Latinoamérica.
 
 
-#### ¿CUÁLES SON LAS CATEGORÍAS MÁS VISTAS Y EN LAS QUE MÁS HORAS DE DIRECTO SE HAN REALIZADO?
+#### 2 ¿CUÁLES SON LAS CATEGORÍAS MÁS VISTAS Y EN LAS QUE MÁS HORAS DE DIRECTO SE HAN REALIZADO?
 Durante febrero de 2023, las categorías más populares en Twitch España destacaron la predominancia de algunas categorías en términos de espectadores y horas de streaming.
 
 La categoría líder en espectadores fue Just Chatting, con un total de 186.414.128 de espectadores. Esta destaca por su amplia variedad de contenidos, que van desde charlas informales, debates, entrevistas, entre otras.
@@ -26,7 +26,7 @@ Al analizar las categorías con más horas de streaming en el gráfico, se puede
 En particular, Fortnite tuvo una presencia destacada en el gráfico, con un alto número de horas de streaming registradas. Sin embargo, Just Chatting sigue liderando en términos de espectadores totales, superando a las categorías de juegos en popularidad.
 
 
-#### ¿CÓMO HAN EVOLUCIONADO (CAPTURA A CAPTURA) ESTÁS CATEGORÍAS A LO LARGO DEL MES? 
+#### 3 ¿CÓMO HAN EVOLUCIONADO (CAPTURA A CAPTURA) ESTÁS CATEGORÍAS A LO LARGO DEL MES? 
 El consumo de contenido en Twitch sigue patrones consistentes en el tiempo, con categorías populares como Fortnite, GTA V, League of Legends (LoL) o Valorant mostrando picos de audiencia en horas específicas. Sin embargo, eventos disruptivos pueden interrumpir estos patrones, como la Kings League en la categoría de Deportes (Sports) durante los fines de semana o los Squid Craft Games 2 en Minecraft.
 
 Al analizar las categorías, se destaca que Just Chatting es aparentemente la más estable, mientras que la categoria de Deportes (Sports) muestra consistencia con una amplia variedad de contenido relacionado con la práctica de deportes. Sin embargo, el 7 de febrero se registra un pico de más de 5 millones de espectadores debido al estreno del juego Hogwarts Legacy, que luego cae abruptamente en términos de espectadores.
@@ -34,11 +34,11 @@ Al analizar las categorías, se destaca que Just Chatting es aparentemente la m�
 Además, el 27 de febrero destaca con un pico de 7,667,708 espectadores en la categoría de Eventos Especiales (Special Events), que luego se mantiene por debajo del mínimo durante el resto del mes, posiblemente relacionado con el evento de Ibai Llanos.
 
 
-##### ¿CUÁL ES LA DISTRIBUCIÓN DE LOS STREAMERS SI LOS CLASIFICAMOS POR VOLÚMENES DE AUDIENCIA Y HORAS REALIZADAS?
+##### 4 ¿CUÁL ES LA DISTRIBUCIÓN DE LOS STREAMERS SI LOS CLASIFICAMOS POR VOLÚMENES DE AUDIENCIA Y HORAS REALIZADAS?
 Durante el mes de febrero, se observó que la Kings League y ibai continuaron liderando en términos de espectadores en Twitch, como se había visto en análisis anteriores. Aunque auronplay también tuvo una presencia notable a pesar de no haber transmitido durante todo el mes, su regreso generó un alto número de espectadores y se coló en el top 10.
 Las categorías en qué estos streamers pasaron la mayor cantidad de horas transmitiendo, estan vinculadas con las categorías más populares en Twitch. La Kings League se destacó en la categoría de Deportes, ibai en Just Chatting y Eventos Especiales, y los demás streamers en sus respectivas categorías.
 En el top 10 de streamers más vistos, LVPes, pasó aproximadamente 292 horas en streming, posicionándose en el séptimo lugar en términos de volumen de espectadores. Mientras que auronplay, a pesar de haber transmitido solo alrededor de 19 horas, superó en espectadores a rivers_gg, debido a la expectación generada por su regreso. Se puede concluir que el resultado de audiencia está relacionado con la popularidad del contenido y/o del streamer.
 En primer lugar, la Kings League destacó con una audiencia superior a los demás, con un total de 43,710,847 espectadores durante el mes. Este fenómeno se trata de encuentros de fútbol 7. 
 
-##### ¿CUÁL HA SIDO LA EVOLUCIÓN (CAPTURA A CAPTURA) DE LA DESVIACIÓN ESTÁNDAR EN EL VOLUMEN DE ESPECTADORES?
+##### 5 ¿CUÁL HA SIDO LA EVOLUCIÓN (CAPTURA A CAPTURA) DE LA DESVIACIÓN ESTÁNDAR EN EL VOLUMEN DE ESPECTADORES?
 La desviación estándar en el volumen de espectadores se mantiene mayormente estable a lo largo del mes, salvo cuando se producen picos de desviación coincidiendo con eventos destacados. Específicamente, el 26 de febrero se destaca como el día con la variación más alta en el número de espectadores durante el mes por la KingLeague.

@@ -1,0 +1,138 @@
+<html>
+<head>
+<title>TWITCH.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #808080;}
+.s3 { color: #6a8759;}
+.s4 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+TWITCH.py</font>
+</center></td></tr></table>
+<pre><span class="s0">import </span><span class="s1">pandas </span><span class="s0">as </span><span class="s1">pd</span>
+<span class="s0">import </span><span class="s1">numpy </span><span class="s0">as </span><span class="s1">np</span>
+
+<span class="s2">#Carga el archivo CSV en un DataFrame (df) utilizando la función pd.read_csv()</span>
+<span class="s1">df=pd.read_csv(</span><span class="s3">&quot;/Users/Lidia/PycharmProjects/pythonProject2/EXCEL/feb_23_es_simple.csv&quot;</span><span class="s0">, </span><span class="s1">sep=</span><span class="s3">'</span><span class="s0">\t</span><span class="s3">'</span><span class="s1">)</span>
+
+<span class="s2">#La primera línea obtiene el número de filas y la segunda el número de columnas del DataFrame</span>
+<span class="s1">rows = df.shape[</span><span class="s4">0</span><span class="s1">]</span>
+<span class="s1">cols = df.shape[</span><span class="s4">1</span><span class="s1">]</span>
+
+<span class="s2">#Se imprime los nombres de las columnas del DataFrame, uno por uno, como una lista de las categorías o etiquetas de las columnas en el DataFrame.</span>
+<span class="s1">print (</span><span class="s3">'Las categorias de las columnas son:'</span><span class="s1">)</span>
+<span class="s0">for </span><span class="s1">col </span><span class="s0">in </span><span class="s1">df.columns:</span>
+    <span class="s1">print (col)</span>
+
+
+<span class="s2">#1.¿CUÁL HA SIDO LA EVOLUCIÓN DE ESPECTADORES (CAPTURA A CAPTURA) DURANTE EL PERIODO?</span>
+
+<span class="s2">#Se crea un nuevo DataFrame llamado df1 que contiene únicamente las columnas 'captured_at' y 'viewer_count' del DataFrame original</span>
+<span class="s1">df1 = df[[</span><span class="s3">'captured_at'</span><span class="s0">,</span><span class="s3">'viewer_count'</span><span class="s1">]]</span>
+
+<span class="s2">#Se crea una lista llamada unique_list que contiene los valores únicos de la columna 'captured_at' del DataFrame df.</span>
+<span class="s1">unique_list = list(df[</span><span class="s3">'captured_at'</span><span class="s1">].unique())</span>
+<span class="s1">print(unique_list)</span>
+
+<span class="s2">#Se realiza un agrupamiento y suma en el DataFrame df basada en la columna 'captured_at', y el resultado se asigna a un nuevo DataFrame llamado df_sum.</span>
+<span class="s2">#El .reset_index() sirve para resetear el índice del DataFrameGroupBy y convertirlo en un nuevo DataFrame con un índice numérico.</span>
+<span class="s1">df_sum = df.groupby([</span><span class="s3">'captured_at'</span><span class="s1">])[</span><span class="s3">'viewer_count'</span><span class="s1">].sum().reset_index()</span>
+<span class="s1">print(</span><span class="s3">&quot;La evolución de los espectadores durante el periodo ha sido:&quot;</span><span class="s1">)</span>
+<span class="s1">print(df_sum)</span>
+<span class="s1">df_sum.to_csv(</span><span class="s3">'1.csv'</span><span class="s1">) </span><span class="s2">#Exportamos el dataframe</span>
+
+
+<span class="s2">#2.¿CUÁLES SON LAS CATEGORÍAS MÁS VISTAS Y EN LAS QUE MÁS HORAS DE DIRECTO SE HAN REALIZADO?</span>
+
+<span class="s2"># Se convierte la columna 'captured_at' a tipo de dato datetime</span>
+<span class="s1">df[</span><span class="s3">'captured_at'</span><span class="s1">] = pd.to_datetime(df[</span><span class="s3">'captured_at'</span><span class="s1">])</span>
+
+<span class="s2"># Se calcula el total de visualizaciones por categoría</span>
+<span class="s2">#El .agg() es una abreviatura de &quot;aggregates&quot; (agregaciones) y se utiliza para aplicar una o más operaciones a un DataFrame o a un objeto de tipo GroupBy.</span>
+<span class="s1">categorias_vistas = df.groupby(</span><span class="s3">'game_name'</span><span class="s1">).agg({</span><span class="s3">'viewer_count'</span><span class="s1">: </span><span class="s3">'sum'</span><span class="s1">}).reset_index()</span>
+
+<span class="s2"># Se ordena las categorías por el total de visualizaciones en orden descendente</span>
+<span class="s1">categorias_vistas = categorias_vistas.sort_values(by=</span><span class="s3">'viewer_count'</span><span class="s0">, </span><span class="s1">ascending=</span><span class="s0">False</span><span class="s1">)</span>
+
+
+<span class="s2"># Se calcula el total de horas de directo por categoría</span>
+<span class="s2"># Se calcula la diferencia en horas entre cada registro consecutivo en la columna 'captured_at' (esto es gracias al .diff()) y lo almacena en una nueva columna 'horas_directo' en el DataFrame df.</span>
+<span class="s2"># El dt.total_seconds() se utiliza para convertir una cantidad de tiempo expresada en unidades de tiempo (como días, horas, minutos, etc.) a segundos.</span>
+<span class="s2"># Por tanto, se divide los segundos entre 3600 (la cantidad de segundos en una hora) para obtener la diferencia en horas.</span>
+<span class="s1">df[</span><span class="s3">'horas_directo'</span><span class="s1">] = df[</span><span class="s3">'captured_at'</span><span class="s1">].diff().dt.total_seconds() / </span><span class="s4">3600</span>
+<span class="s1">categorias_horas = df.groupby(</span><span class="s3">'game_name'</span><span class="s1">).agg({</span><span class="s3">'horas_directo'</span><span class="s1">: </span><span class="s3">'sum'</span><span class="s1">}).reset_index()</span>
+
+<span class="s2"># Se ordena las categorías por el total de horas de directo en orden descendente</span>
+<span class="s1">categorias_horas = categorias_horas.sort_values(by=</span><span class="s3">'horas_directo'</span><span class="s0">, </span><span class="s1">ascending=</span><span class="s0">False</span><span class="s1">)</span>
+
+<span class="s2"># Se imprimir las 10 categorías con más visualizaciones. Esto se puede hacer por el .head(10).</span>
+<span class="s1">print(</span><span class="s3">&quot;Categorías con más visualizaciones:&quot;</span><span class="s1">)</span>
+<span class="s1">print(categorias_vistas.head(</span><span class="s4">10</span><span class="s1">))</span>
+
+<span class="s2"># Se imprimir las 10 categorías con más horas de directo Esto se puede hacer por el .head(10).</span>
+<span class="s1">print(</span><span class="s3">&quot;Categorías con más horas de directo:&quot;</span><span class="s1">)</span>
+<span class="s1">print(categorias_horas.head(</span><span class="s4">10</span><span class="s1">))</span>
+
+<span class="s1">categorias_vistas.to_csv(</span><span class="s3">'2.csv'</span><span class="s0">, </span><span class="s1">decimal=</span><span class="s3">','</span><span class="s0">, </span><span class="s1">index=</span><span class="s0">False</span><span class="s1">) </span><span class="s2">#exportamos</span>
+<span class="s1">categorias_horas.to_csv(</span><span class="s3">'3.csv'</span><span class="s0">, </span><span class="s1">decimal=</span><span class="s3">','</span><span class="s0">, </span><span class="s1">index=</span><span class="s0">False</span><span class="s1">) </span><span class="s2">#exportamos</span>
+
+
+<span class="s2">#3.¿CÓMO HAN EVOLUCIONADO (CAPTURA A CAPTURA) ESTAS CATEGORIAS A LO LARGO DEL MES?</span>
+
+<span class="s2"># Se crea un nuevo DataFrame llamado df1 que contiene únicamente las columnas 'captured_at' y 'game_name' del DataFrame original</span>
+<span class="s1">df1 = df[[</span><span class="s3">'captured_at'</span><span class="s0">, </span><span class="s3">'game_name'</span><span class="s1">]]</span>
+
+<span class="s2"># Se crea una lista llamada unique_list que contiene los valores únicos de la columna 'captured_at' del DataFrame df1</span>
+<span class="s1">unique_list = list(df1[</span><span class="s3">'captured_at'</span><span class="s1">].unique())</span>
+
+<span class="s2"># Se realiza un agrupamiento en el DataFrame df1 basado en las columnas 'captured_at' y 'game_name', y se imprime la evolución de las visualizaciones por categoría captura a captura</span>
+<span class="s2"># Se utiliza el método value_counts() en la columna 'game_name' del DataFrame filtrado df_captured_at para obtener la cantidad de visualizaciones para cada categoría en esa captura.</span>
+<span class="s1">print(</span><span class="s3">&quot;La evolución de las visualizaciones por categoría durante el periodo ha sido:&quot;</span><span class="s1">)</span>
+<span class="s0">for </span><span class="s1">captured_at </span><span class="s0">in </span><span class="s1">unique_list:</span>
+    <span class="s1">df_captured_at = df1[df1[</span><span class="s3">'captured_at'</span><span class="s1">] == captured_at]</span>
+    <span class="s1">game_counts = df_captured_at[</span><span class="s3">'game_name'</span><span class="s1">].value_counts()</span>
+    <span class="s1">print(</span><span class="s3">f&quot;Captura: </span><span class="s0">{</span><span class="s1">captured_at</span><span class="s0">}</span><span class="s3">&quot;</span><span class="s1">)</span>
+    <span class="s1">print(game_counts)</span>
+
+<span class="s1">game_counts.to_csv(</span><span class="s3">'4.csv'</span><span class="s1">) </span><span class="s2">#exportamos</span>
+
+
+<span class="s2">#4. ¿CUÁL ES LA DISTRIBUCIÓN DE LOS STREAMERS SI LOS CLASIFICAMOS POR VOLUMENES DE AUDIENCIA Y HORAS REALIZADAS?</span>
+
+<span class="s2"># Se agrupa por 'streamer_name' y se calculaa la suma de 'viewer_count' y 'horas_directo' para cada streamer</span>
+<span class="s1">streamers = df.groupby(</span><span class="s3">'streamer_name'</span><span class="s1">).agg({</span><span class="s3">'viewer_count'</span><span class="s1">: </span><span class="s3">'sum'</span><span class="s0">, </span><span class="s3">'horas_directo'</span><span class="s1">: </span><span class="s3">'sum'</span><span class="s1">}).reset_index()</span>
+
+<span class="s2"># Se ordena los resultados por volumen de audiencia y horas realizadas de forma descendiente</span>
+<span class="s1">streamers = streamers.sort_values(by=[</span><span class="s3">'viewer_count'</span><span class="s0">, </span><span class="s3">'horas_directo'</span><span class="s1">]</span><span class="s0">, </span><span class="s1">ascending=</span><span class="s0">False</span><span class="s1">)</span>
+
+<span class="s2"># Se imprime la distribución de streamers por volumen de audiencia y horas realizadas</span>
+<span class="s1">print(</span><span class="s3">&quot;Distribución de streamers por volumen de audiencia y horas realizadas:&quot;</span><span class="s1">)</span>
+<span class="s1">print(streamers.head(</span><span class="s4">10</span><span class="s1">))</span>
+
+<span class="s1">streamers.to_csv(</span><span class="s3">'4.csv'</span><span class="s0">, </span><span class="s1">decimal=</span><span class="s3">','</span><span class="s1">) </span><span class="s2">#exportamos</span>
+
+<span class="s2">#5.¿CUÁL HA SIDO LA EVOLUCIÓN (CAPTURA A CAPTURA) DE LA DESVIACIÓN ESTÁNDAR EN EL VOLÚMEN DE ESPECTADORES?</span>
+<span class="s2">#.¿EN QUÉ MOMENTOS LAS AUDIENCIAS SE ENCUENTRAN MÁS POLARIZADAS Y EN QUÉ MOMENTOS LA DISTRIBUCIÓN ES MÁS UNIFORME?</span>
+<span class="s2">#Las audiencias se encuentran más polarizadas cuando</span>
+
+<span class="s2"># Se crea un nuevo DataFrame llamado df1 que contiene únicamente las columnas 'captured_at' y 'viewer_count' del DataFrame original</span>
+<span class="s1">df1 = df[[</span><span class="s3">'captured_at'</span><span class="s0">,</span><span class="s3">'viewer_count'</span><span class="s1">]]</span>
+
+<span class="s2"># Se agrupar por 'captured_at' y se calculaa la desviación estándar en el volumen de espectadores para cada captura con el .std()</span>
+<span class="s1">df_std = df1.groupby(</span><span class="s3">'captured_at'</span><span class="s1">)[</span><span class="s3">'viewer_count'</span><span class="s1">].std()</span>
+
+<span class="s2"># Se imprime la evolución captura a captura de la desviación estándar en el volumen de espectadores</span>
+<span class="s1">print(</span><span class="s3">&quot;La evolución de la desviación estándar en el volumen de espectadores durante el periodo ha sido:&quot;</span><span class="s1">)</span>
+<span class="s1">print(df_std)</span>
+
+<span class="s1">df_std.to_csv(</span><span class="s3">'4.csv'</span><span class="s0">, </span><span class="s1">decimal=</span><span class="s3">','</span><span class="s0">, </span><span class="s1">index=</span><span class="s0">False</span><span class="s1">) </span><span class="s2">#exportamos</span>
+</pre>
+</body>
+</html>

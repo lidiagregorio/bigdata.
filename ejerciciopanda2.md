@@ -12,9 +12,9 @@ Además, se puede observar que la audiencia de Twitch muestra un patrón cíclic
 
 
 #### 2 ¿CUÁLES SON LAS CATEGORÍAS MÁS VISTAS Y EN LAS QUE MÁS HORAS DE DIRECTO SE HAN REALIZADO?
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/lidiagregorio/bigdata./blob/main/2.png)
-
 Durante febrero de 2023, las categorías más populares en Twitch España destacaron la predominancia de algunas categorías en términos de espectadores y horas de streaming.
+
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/lidiagregorio/bigdata./blob/main/2.png)
 
 La categoría líder en espectadores fue Just Chatting, con un total de 186.414.128 de espectadores. Esta destaca por su amplia variedad de contenidos, que van desde charlas informales, debates, entrevistas, entre otras. Por otro lado, la categoría de Sports también destacó, muy probablemente por la aparición de la Kings League. Aunque esta categoría tuvo menos horas de streaming en comparación con otras, su capacidad para atraer a un gran número de espectadores es notable. Esto resalta el poder de los grandes eventos en Twitch y cómo pueden generar un pico significativo de audiencia en un corto plazo.
 

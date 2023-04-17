@@ -62,8 +62,8 @@ print(categorias_vistas.head(10))
 print("Categorías con más horas de directo:")
 print(categorias_horas.head(10))
 
-categorias_vistas.to_csv('2.csv', decimal=',', index=False) #exportamos
-categorias_horas.to_csv('3.csv', decimal=',', index=False) #exportamos
+categorias_vistas.to_csv('2.csv') #exportamos
+categorias_horas.to_csv('3.csv') #exportamos
 
 
 #3.¿CÓMO HAN EVOLUCIONADO (CAPTURA A CAPTURA) ESTAS CATEGORIAS A LO LARGO DEL MES?
@@ -101,17 +101,14 @@ print(streamers.head(10))
 streamers.to_csv('4.csv', decimal=',') #exportamos
 
 #5.¿CUÁL HA SIDO LA EVOLUCIÓN (CAPTURA A CAPTURA) DE LA DESVIACIÓN ESTÁNDAR EN EL VOLÚMEN DE ESPECTADORES?
-#.¿EN QUÉ MOMENTOS LAS AUDIENCIAS SE ENCUENTRAN MÁS POLARIZADAS Y EN QUÉ MOMENTOS LA DISTRIBUCIÓN ES MÁS UNIFORME?
-#Las audiencias se encuentran más polarizadas cuando
-
 # Se crea un nuevo DataFrame llamado df1 que contiene únicamente las columnas 'captured_at' y 'viewer_count' del DataFrame original
 df1 = df[['captured_at','viewer_count']]
 
 # Se agrupar por 'captured_at' y se calculaa la desviación estándar en el volumen de espectadores para cada captura con el .std()
-df_std = df1.groupby('captured_at')['viewer_count'].std()
+df_std = df1.groupby('captured_at')['viewer_count'].std().reset_index()
 
 # Se imprime la evolución captura a captura de la desviación estándar en el volumen de espectadores
 print("La evolución de la desviación estándar en el volumen de espectadores durante el periodo ha sido:")
 print(df_std)
 
-df_std.to_csv('4.csv', decimal=',', index=False) #exportamos
+df_std.to_csv('4.csv', decimal=',') #exportamos

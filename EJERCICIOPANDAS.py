@@ -111,4 +111,4 @@ df_std = df1.groupby('captured_at')['viewer_count'].std().reset_index()
 print("La evolución de la desviación estándar en el volumen de espectadores durante el periodo ha sido:")
 print(df_std)
 
-df_std.to_csv('4.csv', decimal=',') #exportamos
+df_std.to_csv('4.csv', index=False) #exportamos

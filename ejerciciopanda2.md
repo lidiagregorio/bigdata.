@@ -24,6 +24,8 @@ Al analizar las categorías con más horas de streaming en el gráfico, se puede
 
 
 #### 3 ¿CÓMO HAN EVOLUCIONADO (CAPTURA A CAPTURA) ESTÁS CATEGORÍAS A LO LARGO DEL MES? 
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/lidiagregorio/bigdata./blob/main/3.png)
+
 El consumo de contenido en Twitch sigue patrones consistentes en el tiempo, con categorías populares como Fortnite, GTA V, League of Legends (LoL) o Valorant mostrando picos de audiencia en horas específicas. Sin embargo, eventos disruptivos pueden interrumpir estos patrones, como la Kings League en la categoría de Deportes (Sports) durante los fines de semana o los Squid Craft Games 2 en Minecraft.
 
 Al analizar las categorías, se destaca que Just Chatting es aparentemente la más estable, mientras que la categoria de Deportes (Sports) muestra consistencia con una amplia variedad de contenido relacionado con la práctica de deportes. Sin embargo, el 7 de febrero se registra un pico de más de 5 millones de espectadores debido al estreno del juego Hogwarts Legacy, que luego cae abruptamente en términos de espectadores.

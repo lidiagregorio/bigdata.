@@ -24,7 +24,7 @@ Al analizar las categorías con más horas de streaming en el gráfico, se puede
 
 
 #### 3 ¿CÓMO HAN EVOLUCIONADO (CAPTURA A CAPTURA) ESTÁS CATEGORÍAS A LO LARGO DEL MES? 
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/lidiagregorio/bigdata./blob/main/3.png)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/lidiagregorio/bigdata./blob/main/4.png)
 
 El consumo de contenido en Twitch sigue patrones consistentes en el tiempo, con categorías populares como Fortnite, GTA V, League of Legends (LoL) o Valorant mostrando picos de audiencia en horas específicas. Sin embargo, eventos disruptivos pueden interrumpir estos patrones, como la Kings League en la categoría de Deportes (Sports) durante los fines de semana o los Squid Craft Games 2 en Minecraft.
 
@@ -34,7 +34,7 @@ Además, el 27 de febrero destaca con un pico de 7,667,708 espectadores en la ca
 
 
 ##### 4 ¿CUÁL ES LA DISTRIBUCIÓN DE LOS STREAMERS SI LOS CLASIFICAMOS POR VOLÚMENES DE AUDIENCIA Y HORAS REALIZADAS?
-![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/lidiagregorio/bigdata./blob/main/4.png)
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/lidiagregorio/bigdata./blob/main/3.png)
 
 Durante el mes de febrero, se observó que la Kings League y ibai continuaron liderando en términos de espectadores en Twitch, como se había visto en análisis anteriores. Aunque auronplay también tuvo una presencia notable a pesar de no haber transmitido durante todo el mes, su regreso generó un alto número de espectadores y se coló en el top 10.
 Las categorías en qué estos streamers pasaron la mayor cantidad de horas transmitiendo, estan vinculadas con las categorías más populares en Twitch. La Kings League se destacó en la categoría de Deportes, ibai en Just Chatting y Eventos Especiales, y los demás streamers en sus respectivas categorías.

@@ -1,7 +1,9 @@
 ### TWITCH DURANTE EL MES DE FEBRERO
 En este análisis, examinaremos algunos de los principales indicadores de rendimiento de Twitch durante el mes de febrero de 2023 en España, incluyendo la evolución de los de los espectadores (captura a captura), las categorías más vistas y las horas con más directo, cómo se han comportado estas durante todo el periodo, los streamers más populares en cuanto a visualizaciones y horas realizadas de directo y, por último, la desviación del volumen de espectadores. Esto nos permitirá comprender mejor el panorama de Twitch en España durante ese mes y analizar las tendencias y patrones observados en la plataforma de transmisión en vivo líder en el país.
 
+
 #### 1 ¿CUÁL HA SIDO LA EVOLUCIÓN DE ESPECTADORES (CAPTURA A CAPTURA) DURANTE EL PERIODO?
+https://github.com/lidiagregorio/bigdata./blob/main/1.png
 
 Durante febrero se pueden identificar comportamientos específicos en la audiencia de Twitch, ya que ha experimentado un aumento general durante el mes, con cinco picos destacados. Los picos más notables ocurrieron a finales de mes, el 26 de febrero con 39,082,398 y el 28 de febrero con 46,056,029 espectadores, debido al regreso a la plataforma del streamer Auronplay, y a la celebración de eventos como la Kings League durante el día 26, la Velada de Ibai el 27 de febrero, y los Squid Games 2 con Auronplay el 28 de febrero.
 

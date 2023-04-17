@@ -34,6 +34,8 @@ Además, el 27 de febrero destaca con un pico de 7,667,708 espectadores en la ca
 
 
 ##### 4 ¿CUÁL ES LA DISTRIBUCIÓN DE LOS STREAMERS SI LOS CLASIFICAMOS POR VOLÚMENES DE AUDIENCIA Y HORAS REALIZADAS?
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/lidiagregorio/bigdata./blob/main/4.png)
+
 Durante el mes de febrero, se observó que la Kings League y ibai continuaron liderando en términos de espectadores en Twitch, como se había visto en análisis anteriores. Aunque auronplay también tuvo una presencia notable a pesar de no haber transmitido durante todo el mes, su regreso generó un alto número de espectadores y se coló en el top 10.
 Las categorías en qué estos streamers pasaron la mayor cantidad de horas transmitiendo, estan vinculadas con las categorías más populares en Twitch. La Kings League se destacó en la categoría de Deportes, ibai en Just Chatting y Eventos Especiales, y los demás streamers en sus respectivas categorías.
 En el top 10 de streamers más vistos, LVPes, pasó aproximadamente 292 horas en streming, posicionándose en el séptimo lugar en términos de volumen de espectadores. Mientras que auronplay, a pesar de haber transmitido solo alrededor de 19 horas, superó en espectadores a rivers_gg, debido a la expectación generada por su regreso. Se puede concluir que el resultado de audiencia está relacionado con la popularidad del contenido y/o del streamer.

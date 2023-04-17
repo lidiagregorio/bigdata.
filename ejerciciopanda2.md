@@ -12,19 +12,15 @@ Además, se puede observar que la audiencia de Twitch muestra un patrón cíclic
 
 
 #### 2 ¿CUÁLES SON LAS CATEGORÍAS MÁS VISTAS Y EN LAS QUE MÁS HORAS DE DIRECTO SE HAN REALIZADO?
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://github.com/lidiagregorio/bigdata./blob/main/2.png)
+
 Durante febrero de 2023, las categorías más populares en Twitch España destacaron la predominancia de algunas categorías en términos de espectadores y horas de streaming.
 
-La categoría líder en espectadores fue Just Chatting, con un total de 186.414.128 de espectadores. Esta destaca por su amplia variedad de contenidos, que van desde charlas informales, debates, entrevistas, entre otras.
+La categoría líder en espectadores fue Just Chatting, con un total de 186.414.128 de espectadores. Esta destaca por su amplia variedad de contenidos, que van desde charlas informales, debates, entrevistas, entre otras. Por otro lado, la categoría de Sports también destacó, muy probablemente por la aparición de la Kings League. Aunque esta categoría tuvo menos horas de streaming en comparación con otras, su capacidad para atraer a un gran número de espectadores es notable. Esto resalta el poder de los grandes eventos en Twitch y cómo pueden generar un pico significativo de audiencia en un corto plazo.
 
-Por otro lado, la categoría de Sports también destacó, muy probablemente por la aparición de la Kings League. Aunque esta categoría tuvo menos horas de streaming en comparación con otras, su capacidad para atraer a un gran número de espectadores es notable. Esto resalta el poder de los grandes eventos en Twitch y cómo pueden generar un pico significativo de audiencia en un corto plazo.
+Minecraft también fue una categoría destacada, principalmente debido a la disputa de los Squid Games 2, su participación en eventos especiales o competiciones puede aumentar su popularidad y atraer a más espectadores. Asimismo, la categoría de League of Legends, uno de los videojuegos más jugados y transmitidos regularmente, también tuvo una presencia destacada. Asimismo, Valorant, otro videojuego en ascenso que ha ganado popularidad en Twitch en los últimos años gracias a su jugabilidad, también se mantuvo en el top 5 de categorías más vistas en febrero.
 
-Minecraft también fue una categoría destacada, principalmente debido a la disputa de los Squid Games 2, su participación en eventos especiales o competiciones puede aumentar su popularidad y atraer a más espectadores. Asimismo, la categoría de League of Legends, uno de los videojuegos más jugados y transmitidos regularmente, también tuvo una presencia destacada. 
-
-Valorant, otro videojuego en ascenso que ha ganado popularidad en Twitch en los últimos años gracias a su jugabilidad, también se mantuvo en el top 5 de categorías más vistas en febrero.
-
-Al analizar las categorías con más horas de streaming en el gráfico, se puede observar una correlación entre el número de horas y el volumen de espectadores. Los juegos más populares suelen estar entre las categorías más vistas, aunque puede haber variaciones por su popularidad. 
-
-En particular, Fortnite tuvo una presencia destacada en el gráfico, con un alto número de horas de streaming registradas. Sin embargo, Just Chatting sigue liderando en términos de espectadores totales, superando a las categorías de juegos en popularidad.
+Al analizar las categorías con más horas de streaming en el gráfico, se puede observar una correlación entre el número de horas y el volumen de espectadores. Los juegos más populares suelen estar entre las categorías más vistas, aunque puede haber variaciones por su popularidad. En particular, Fortnite tuvo una presencia destacada en el gráfico, con un alto número de horas de streaming registradas. Sin embargo, Just Chatting sigue liderando en términos de espectadores totales, superando a las categorías de juegos en popularidad.
 
 
 #### 3 ¿CÓMO HAN EVOLUCIONADO (CAPTURA A CAPTURA) ESTÁS CATEGORÍAS A LO LARGO DEL MES? 
